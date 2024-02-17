@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh; 
+  width: 100%; 
+  border: 1px solid rgb(106, 106, 115);
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  padding: 0 0.25em;
+  height: 10vh;;
+  background-color: rgb(106, 106, 115);
+  color: aliceblue;
+  /* display: flex;
+  justify-content: space-between;
+   align-items: center; */
+}
+.h1{
+  margin-top: 10px;
+  padding-top: 10px;
+  /* justify-content: space-between; */
+   /* align-items: center;
+   text-align: center;
+   text-justify: distribute; */
+}
+
+footer {
+  width: 100%;
+  padding: 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+}
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  margin-left: 10vh;
+  margin-top: 10vh;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: rgb(0, 0, 5);
+  cursor: pointer;
+}
+button:focus, 
+button:hover {
+  color: white;
+  background-color:rgb(106, 106, 115);;
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #a29f9f;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  margin-left:-20px;
+
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  margin-bottom: 20px;
+
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+button[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+ width:34%
+}
+
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+
+}
